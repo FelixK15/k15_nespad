@@ -27,27 +27,13 @@ Single Header library for interacting with a Nintendo Entertainment System contr
   to send signals via the data pin which indicates whether a given button has been pressed
   or not. For any series of pulse signals, a latch signal has to be sent first.
 
-  Be also sure to connect +5v and GND to your NES controller.
-
-  Pinout (from Tresi Avrizo's article):
-            +----> Power  (white)
-            |
-  5 +---------+  7    
-    | x  x  o   \     
-    | o  o  o  o |    
-  4 +------------+ 1  
-      |  |  |  |
-      |  |  |  +-> Ground (brown)
-      |  |  +----> Pulse  (red)
-      |  +-------> Latch  (orange)
-      +----------> Data   (yellow)
-
 
 # What pins can I use on my Arduino?
   The pins for the latch, data and pulse signal have to be digital pins.
   
 
 # Example Usage
+```c
   K15_NESPad nesPad;
 
   void setup()
@@ -86,7 +72,7 @@ Single Header library for interacting with a Nintendo Entertainment System contr
     if (K15_NESButtonPressed(&pad, K15_NESPadButton_Down))
       Serial.println("Down pressed!");
   }
-
+  ```
   # License:
     This software is in the public domain. Where that dedication is not
     recognized, you are granted a perpetual, irrevocable license to copy
