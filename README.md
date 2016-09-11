@@ -73,7 +73,8 @@ Single Header library for interacting with a Nintendo Entertainment System contr
       Serial.println("Down pressed!");
   }
   ```
-  # License:
-    This software is in the public domain. Where that dedication is not
-    recognized, you are granted a perpetual, irrevocable license to copy
-    and modify this file however you want.
+  
+# License
+  This software is in the public domain. Where that dedication is not
+  recognized, you are granted a perpetual, irrevocable license to copy
+  and modify this file however you want.
